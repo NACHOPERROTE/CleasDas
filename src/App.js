@@ -1,14 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './estilos/main.scss';
+import NavBar from './componentes/NavBar';
+import Cajas from './componentes/Cajas'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+
+      <NavBar />
+
+      
+{/*      
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -16,8 +17,17 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
+        </a> */}
+     
+     <div className="section__col">
+        <div id="contenedorProductosLavandina" className='section__col--div'>           
+            <h2 className='section__titulosUno'>LAVANDINA</h2>
+          <Cajas />
+        </div>
+      </div>
+
+
+
     </div>
   );
 }
