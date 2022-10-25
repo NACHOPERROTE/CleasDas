@@ -1,6 +1,6 @@
 import './estilos/main.scss';
 import NavBar from './componentes/NavBar';
-import Cajas from './componentes/Cajas'
+import Contenedor from './componentes/Contenedor';
 
 function App() {
   return (
@@ -19,12 +19,14 @@ function App() {
           Learn React
         </a> */}
      
-     <div className="section__col">
-        <div id="contenedorProductosLavandina" className='section__col--div'>           
-            <h2 className='section__titulosUno'>LAVANDINA</h2>
-          <Cajas />
-        </div>
-      </div>
+     <main>
+      
+        <Contenedor />
+
+
+
+     </main>
+    
 
 
 
