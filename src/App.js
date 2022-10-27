@@ -1,13 +1,13 @@
 import './estilos/main.scss';
 import NavBar from './componentes/NavBar';
 import Contenedor from './componentes/Contenedor';
+import Lista from './componentes/Lista';
 
 function App() {
   return (
     <div className="App">
 
       <NavBar />
-
       
 {/*      
         <a
@@ -20,6 +20,8 @@ function App() {
         </a> */}
      
      <main>
+
+        <Lista />
       
         <Contenedor />
 
