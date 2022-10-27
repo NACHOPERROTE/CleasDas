@@ -1,4 +1,4 @@
-import Counter from "./Contador";
+// import Counter from "./Contador";
 import portada from '../img/portada.jpg';
 import Formulario from "./Formulario";
 import carrito from '../img/carrito.png';

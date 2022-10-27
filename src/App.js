@@ -1,7 +1,7 @@
 import './estilos/main.scss';
 import NavBar from './componentes/NavBar';
 import Contenedor from './componentes/Contenedor';
-import Lista from './componentes/Lista';
+import Menu from './componentes/Menu';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
      
      <main>
 
-        <Lista />
+        <Menu />
       
         <Contenedor />
 
