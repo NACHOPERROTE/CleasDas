@@ -1,37 +1,21 @@
 import './estilos/main.scss';
-import NavBar from './componentes/NavBar';
-import Contenedor from './componentes/Contenedor';
-import Menu from './componentes/Menu';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Category from './pages/Category';
+import ProductosDet from './componentes/ProductosDet';
+
 
 function App() {
   return (
     <div className="App">
-
-      <NavBar />
-      
-{/*      
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-     
-     <main>
-
-        <Menu />
-      
-        <Contenedor />
-
-
-
-     </main>
-    
-
-
-
+    <BrowserRouter>
+      <Routes>
+        <Route path={"/"} element={<Home />} />
+        <Route path={"/category/:categoryId"} element={<ProductosDet />}/>
+       
+      </Routes>
+       
+     </BrowserRouter> 
     </div>
   );
 }

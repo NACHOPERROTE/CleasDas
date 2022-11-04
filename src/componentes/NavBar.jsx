@@ -5,18 +5,30 @@ import carrito from '../img/carrito.png';
 
 
 
+
 const NavBar = () => {
 
-    return(
+  const inicio = () =>{
+      window.scrollTo({
+        top: (0,0),
+        behavior: "smooth",
+      })
+    };
+
+
+  
+  return(
         <header>
              <nav>
           <div className="container-fluid header">
 
-            <div className="row header__navbar">
+            <div className="row header__navbar" >
 
               <div className="col-md-6 header__contenido">
-                  <img src={portada} alt=""  className='header__contenido--img'/>
-                    <h2 className="header__contenido--a">Clear Das</h2>
+                <img src={portada} alt=""  className='header__contenido--img' />
+                 <button  onClick={ () => inicio()}  className="header__contenido--btn">Clear Das</button>
+                   
+                  
               </div>
 
               <div className="col-md-6 header__lista">
@@ -37,6 +49,10 @@ const NavBar = () => {
 
 
     );
+
+
+
+
 
 
 };
