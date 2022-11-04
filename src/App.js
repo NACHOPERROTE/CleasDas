@@ -1,7 +1,7 @@
 import './estilos/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Category from './pages/Category';
+// import Category from './pages/Category';
 import ProductosDet from './componentes/ProductosDet';
 
 
