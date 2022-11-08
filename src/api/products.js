@@ -125,3 +125,12 @@ export const getProducts = (tipo) =>
       res(response);
     }, 1500);
   });
+
+
+  export const getProduct = (productId) =>
+  new Promise((res, rej) => {
+    const response = catalogo.find((product) => product.id === +productId);
+    setTimeout(() => {
+      res(response);
+    }, 1500);
+  });
