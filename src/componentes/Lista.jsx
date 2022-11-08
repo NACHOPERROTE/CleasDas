@@ -7,7 +7,7 @@ const Lista = () => {
     return (
         catalogo.map((elemento) => {
             return ( 
-                <li className='listaGrupos__lista--li'><Link to={`/category/${elemento.toLowerCase()}`} key={elemento}>{elemento}</Link></li>     
+                <li className='listaGrupos__lista--li'><Link className='listaGrupos__lista--link' to={`/category/${elemento.toLowerCase()}`} key={elemento} >{elemento}</Link></li>     
             );
         })
 

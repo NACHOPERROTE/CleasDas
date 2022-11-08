@@ -76,6 +76,7 @@
         margin-right: 3rem;
     }
 
+
     &__listaNav{
         display: flex;
     }
@@ -209,6 +210,15 @@
         
         list-style-type: none;
         display: inline;
+        font-size: 2rem;
+        
+    }
+
+    &__lista--link{
+        
+        list-style-type: none;
+        display: inline;
+        text-decoration: none;
         font-size: 2rem;
         
     }

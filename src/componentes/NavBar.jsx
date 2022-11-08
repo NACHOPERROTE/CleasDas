@@ -2,6 +2,7 @@
 import portada from '../img/portada.jpg';
 import Formulario from "./Formulario";
 import carrito from '../img/carrito.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -26,7 +27,7 @@ const NavBar = () => {
 
               <div className="col-md-6 header__contenido">
                 <img src={portada} alt=""  className='header__contenido--img' />
-                 <button  onClick={ () => inicio()}  className="header__contenido--btn">Clear Das</button>
+                 <button  onClick={ () => inicio()}  className="header__contenido--btn"><Link to={`/`} className="header__contenido--btn">Clear Das</Link></button>
                    
                   
               </div>
