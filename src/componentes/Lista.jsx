@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-let catalogo = [ "Lavandina" , "Detergente" , "Bolsas" ];
+let catalogo = [ "Lavandina" , "Detergente" , "Bolsas" , "Alcohol" , "Desinfectante", "Papeleria", "Guantes", "Trapo", "Ropa", "Cif", "Escobillon", "Auto" ];
 
 const Lista = () => {
         
